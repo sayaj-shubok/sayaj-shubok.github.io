@@ -58,6 +58,35 @@
       width: fit-content;
     }
   </style>
+  .call-button, .whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  z-index: 9999;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.call-button {
+  right: 20px;
+  background-color: #0a66c2;
+}
+
+.whatsapp-button {
+  left: 20px;
+  background-color: #25D366;
+}
+
+.call-button:hover,
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
 </head>
 <body>
   <header>
@@ -93,7 +122,15 @@
     <p>
       تركيب شبك أمان وزراعة، تنفيذ هناجر ومستودعات، مظلات مواقف سيارات، أعمال الحدائق والتشجير، شغل حجر وزراعة أرضيات ومشايات، تغطية شاملة لأعمال الإنشاءات الخارجية.
     </p>
-    <a class="whatsapp" href="https://wa.me/966504010856">تواصل معنا عبر واتساب</a>
+   !-- زر الاتصال على يمين الشاشة -->
+<a href="tel:966534010856" class="call-button" title="اتصل الآن">
+  📞
+</a>
+
+<!-- زر واتساب على يسار الشاشة -->
+<a href="https://wa.me/966534010856" class="whatsapp-button" target="_blank" title="تواصل واتساب">
+  💬
+</a>
   </div>
 </body>
 </html>
